@@ -4,6 +4,7 @@ new Vue({
     name: "Ryan",
     job: "Software Engineer",
     website: "http://ryan.com",
+    age: 33,
     websiteHTML: '<a href="http://ryan.com">Home</a>'
   },
   methods: {
