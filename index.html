@@ -13,8 +13,13 @@
     <h2>Example 2</h2>
     <button v-on:click="error = !error">toggle error</button>
     <button v-on:click="success = !success">toggle success</button>
+    <!-- if else removes the elements in the dom -->
     <p v-if="error">Show error</p>
-    <p v-if="success">Show Success</p>
+    <p v-else-if="success">Show Success</p>
+
+    <!-- hides the element by css display:none; -->
+    <p v-show="error">Show error</p>
+    <p v-show="success">Show Success</p>
   </div>
   <script src="app.js"></script>
 </body>
