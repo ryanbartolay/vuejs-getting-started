@@ -8,16 +8,11 @@
 
 <body>
   <div id="vue-app">
-    <h1>Computed Properties</h1>
-    <p>Age: {{age}}</p>
-    <p>A: {{a}}</p>
-    <button v-on:click="a++">Add to A</button>
+    <h1>Dynamic CSS</h1>
 
-    <p>B: {{b}}</p>
-    <button v-on:click="b++">Add to B</button>
-
-    <p>A + age = {{ addToA }}</p>
-    <p>B + age = {{ addToB }}</p>
+    <div v-on:click="available = !available" v-bind:class="{available : available}">
+      <span>Ryan</span>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
