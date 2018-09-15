@@ -7,19 +7,15 @@
 </head>
 
 <body>
-  <div id="vue-app">
-    <h1>Simple Punch Bag game</h1>
+  <div id="vue-app-one">
+    <h2>{{title}}</h2>
+    <p>{{greet}}</p>
+  </div>
 
-    <div id="bag" v-bind:class="{burst : ended}"></div>
-
-    <div id="bag-health">
-      <div v-bind:style="{ width: health + '%' }"></div>
-    </div>
-
-    <div id="controls">
-      <button v-show="!ended" v-on:click="punch()">Punch</button>
-      <button v-on:click="restart()">Restart</button>
-    </div>
+  <div id="vue-app-two">
+    <h2>{{title}}</h2>
+    <p>{{greet}}</p>
+    <button v-on:click="changeTitle()">Change Title App in One</button>
   </div>
   <script src="app.js"></script>
 </body>
