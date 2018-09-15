@@ -9,15 +9,13 @@
 <body>
   <div id="vue-app">
     <h1>Events</h1>
-    <button v-on:click.once="add(1)">Add a Year</button>
-    <button v-on:click="subtract(1)">Subtract a Year</button>
-    <button v-on:click="add(10)">Add 10 Years</button>
-    <button v-on:click="subtract(10)">Subtract 10 Years</button>
-    <p>My Age is {{age}}</p>
+    <span>Name:</span>
+    <input type="text" v-model="name" />
+    <p>{{name}}</p>
 
-    <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
-
-    <a v-on:click.prevent="click()" href="http://ryan.com">Ryan</a>
+    <span>Age:</span>
+    <input type="text" v-model="age" />
+    <p>{{age}}</p>
   </div>
   <script src="app.js"></script>
 </body>
